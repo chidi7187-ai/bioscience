@@ -1,0 +1,318 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\tx720\cf1\f0\fs38\lang8192 <!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+  <meta charset="UTF-8" />\par
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\par
+  <title>Department of Biological Science | University of Abuja</title>\par
+\par
+  <style>\par
+    /* ===== RESET ===== */\par
+    * \{\par
+      margin: 0;\par
+      padding: 0;\par
+      box-sizing: border-box;\par
+      font-family: "Poppins", sans-serif;\par
+      scroll-behavior: smooth;\par
+    \}\par
+\par
+    body \{\par
+      background-color: #f8fff8;\par
+      color: #222;\par
+    \}\par
+\par
+    /* ===== NAVBAR ===== */\par
+    header \{\par
+      background-color: #56b26f;\par
+      padding: 15px 50px;\par
+      display: flex;\par
+      justify-content: space-between;\par
+      align-items: center;\par
+      position: sticky;\par
+      top: 0;\par
+      z-index: 100;\par
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);\par
+    \}\par
+\par
+    header h1 \{\par
+      color: white;\par
+      font-size: 22px;\par
+      letter-spacing: 1px;\par
+    \}\par
+\par
+    nav ul \{\par
+      display: flex;\par
+      list-style: none;\par
+    \}\par
+\par
+    nav ul li \{\par
+      margin-left: 25px;\par
+    \}\par
+\par
+    nav ul li a \{\par
+      text-decoration: none;\par
+      color: white;\par
+      font-weight: 500;\par
+      transition: 0.3s;\par
+    \}\par
+\par
+    nav ul li a:hover \{\par
+      color: #003300;\par
+    \}\par
+\par
+    /* ===== HERO SECTION ===== */\par
+    .hero \{\par
+      background: linear-gradient(rgba(0, 80, 0, 0.5), rgba(0, 80, 0, 0.5)),\par
+        url("https://images.unsplash.com/photo-1581093588401-22e8b0a3a01f?auto=format&fit=crop&w=1950&q=80");\par
+      background-size: cover;\par
+      background-position: center;\par
+      height: 90vh;\par
+      display: flex;\par
+      flex-direction: column;\par
+      justify-content: center;\par
+      align-items: center;\par
+      color: white;\par
+      text-align: center;\par
+      padding: 0 20px;\par
+      animation: fadeIn 2s ease-in;\par
+    \}\par
+\par
+    .hero h2 \{\par
+      font-size: 42px;\par
+      font-weight: 600;\par
+      animation: slideInDown 1.5s ease-in-out;\par
+    \}\par
+\par
+    .hero p \{\par
+      font-size: 18px;\par
+      margin-top: 15px;\par
+      max-width: 700px;\par
+      animation: fadeIn 2.5s ease-in;\par
+    \}\par
+\par
+    .hero button \{\par
+      margin-top: 25px;\par
+      background-color: #7cd992;\par
+      border: none;\par
+      padding: 12px 30px;\par
+      font-size: 16px;\par
+      font-weight: 500;\par
+      border-radius: 30px;\par
+      cursor: pointer;\par
+      transition: 0.3s;\par
+      animation: fadeInUp 3s ease;\par
+    \}\par
+\par
+    .hero button:hover \{\par
+      background-color: #4ba861;\par
+      color: white;\par
+      transform: scale(1.05);\par
+    \}\par
+\par
+    /* ===== SECTION STYLE ===== */\par
+    section \{\par
+      padding: 80px 60px;\par
+      opacity: 0;\par
+      transform: translateY(40px);\par
+      transition: all 1s ease;\par
+    \}\par
+\par
+    section.visible \{\par
+      opacity: 1;\par
+      transform: translateY(0);\par
+    \}\par
+\par
+    section h3 \{\par
+      color: #2e7d32;\par
+      font-size: 28px;\par
+      margin-bottom: 20px;\par
+      text-align: center;\par
+    \}\par
+\par
+    section p \{\par
+      text-align: center;\par
+      font-size: 17px;\par
+      color: #333;\par
+      max-width: 800px;\par
+      margin: auto;\par
+      line-height: 1.6;\par
+    \}\par
+\par
+    /* ===== NEWS SECTION ===== */\par
+    .news-container \{\par
+      display: grid;\par
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\par
+      gap: 25px;\par
+      margin-top: 40px;\par
+    \}\par
+\par
+    .news-card \{\par
+      background: white;\par
+      border-left: 6px solid #56b26f;\par
+      border-radius: 12px;\par
+      padding: 20px;\par
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);\par
+      transition: transform 0.3s ease, box-shadow 0.3s ease;\par
+    \}\par
+\par
+    .news-card:hover \{\par
+      transform: translateY(-5px);\par
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);\par
+    \}\par
+\par
+    .news-card h4 \{\par
+      color: #2e7d32;\par
+      margin-bottom: 10px;\par
+      font-size: 18px;\par
+    \}\par
+\par
+    .news-card p \{\par
+      font-size: 15px;\par
+      color: #444;\par
+      text-align: left;\par
+      line-height: 1.5;\par
+    \}\par
+\par
+    /* ===== FOOTER ===== */\par
+    footer \{\par
+      background-color: #56b26f;\par
+      color: white;\par
+      text-align: center;\par
+      padding: 25px;\par
+      font-size: 15px;\par
+      animation: fadeIn 2s ease;\par
+    \}\par
+\par
+    /* ===== ANIMATIONS ===== */\par
+    @keyframes fadeIn \{\par
+      from \{ opacity: 0; \}\par
+      to \{ opacity: 1; \}\par
+    \}\par
+\par
+    @keyframes slideInDown \{\par
+      from \{ transform: translateY(-40px); opacity: 0; \}\par
+      to \{ transform: translateY(0); opacity: 1; \}\par
+    \}\par
+\par
+    @keyframes fadeInUp \{\par
+      from \{ transform: translateY(30px); opacity: 0; \}\par
+      to \{ transform: translateY(0); opacity: 1; \}\par
+    \}\par
+\par
+    @media (max-width: 768px) \{\par
+      header \{\par
+        flex-direction: column;\par
+      \}\par
+\par
+      nav ul \{\par
+        flex-wrap: wrap;\par
+        justify-content: center;\par
+        margin-top: 10px;\par
+      \}\par
+\par
+      .hero h2 \{\par
+        font-size: 30px;\par
+      \}\par
+\par
+      section \{\par
+        padding: 60px 25px;\par
+      \}\par
+    \}\par
+  </style>\par
+</head>\par
+\par
+<body>\par
+\par
+  <header>\par
+    <h1>Dept. of Biological Science</h1>\par
+    <nav>\par
+      <ul>\par
+        <li><a href="#home">Home</a></li>\par
+        <li><a href="#about">About</a></li>\par
+        <li><a href="#staff">Staff</a></li>\par
+        <li><a href="#students">Students</a></li>\par
+        <li><a href="#news">News</a></li>\par
+        <li><a href="#contact">Contact</a></li>\par
+      </ul>\par
+    </nav>\par
+  </header>\par
+\par
+  <section class="hero" id="home">\par
+    <h2>Welcome to the Department of Biological Science</h2>\par
+    <p>Faculty of Science, University of Abuja \emdash  A place of knowledge, innovation, and discovery, shaping the future through scientific excellence.</p>\par
+    <button onclick="document.getElementById('about').scrollIntoView(\{ behavior: 'smooth' \});">\par
+      Explore More\par
+    </button>\par
+  </section>\par
+\par
+  <section id="about">\par
+    <h3>About the Department</h3>\par
+    <p>The Department of Biological Science at the University of Abuja is dedicated to advancing biological knowledge through innovative research, impactful teaching, and community engagement. Our programs equip students with practical and theoretical skills for diverse careers in science and beyond.</p>\par
+  </section>\par
+\par
+  <section id="staff">\par
+    <h3>Our Staff</h3>\par
+    <p>Our department comprises a team of dedicated lecturers, researchers, and laboratory technologists who strive for excellence in teaching, mentorship, and discovery.</p>\par
+  </section>\par
+\par
+  <section id="students">\par
+    <h3>For Students</h3>\par
+    <p>Access course outlines, academic schedules, and departmental updates. We foster an environment of collaboration, creativity, and critical thinking \emdash  preparing the next generation of scientists.</p>\par
+  </section>\par
+\par
+  <!-- ===== NEWS SECTION ===== -->\par
+  <section id="news">\par
+    <h3>News & Announcements</h3>\par
+    <div class="news-container">\par
+      <div class="news-card">\par
+        <h4>\u-10179?\u-8990? Departmental Seminar \endash  October 25, 2025</h4>\par
+        <p>All 300-level and 400-level students are invited to attend the upcoming seminar on "Advancements in Biotechnology." Venue: Main Lecture Theatre, 10 AM prompt.</p>\par
+      </div>\par
+\par
+      <div class="news-card">\par
+        <h4>\u-10178?\u-8726? Laboratory Safety Training</h4>\par
+        <p>Mandatory safety training will be held for all new students before practical sessions begin. Date and time will be announced shortly by the lab coordinator.</p>\par
+      </div>\par
+\par
+      <div class="news-card">\par
+        <h4>\u-10180?\u-8301? Final Year Project Submission</h4>\par
+        <p>Final year students are reminded to submit their project proposals by November 5, 2025. Late submissions will not be accepted.</p>\par
+      </div>\par
+    </div>\par
+  </section>\par
+\par
+  <section id="contact">\par
+    <h3>Contact Us</h3>\par
+    <p>\u-10179?\u-9011? Faculty of Science, University of Abuja, Nigeria<br>\par
+      \u-10179?\u-8985? <a href="mailto:chidi7187@gmail.com">chidi7187@gmail.com</a><br>\par
+      \u9742? <a href="tel:+2349012559084">09012559084</a>\par
+    </p>\par
+  </section>\par
+\par
+  <footer>\par
+    \'a9 2025 Department of Biological Science, University of Abuja. All rights reserved.\par
+  </footer>\par
+\par
+  <script>\par
+    // Fade-in animation on scroll\par
+    const sections = document.querySelectorAll("section");\par
+    const options = \{ threshold: 0.2 \};\par
+\par
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) \{\par
+      entries.forEach(entry => \{\par
+        if (!entry.isIntersecting) return;\par
+        entry.target.classList.add("visible");\par
+        observer.unobserve(entry.target);\par
+      \});\par
+    \}, options);\par
+\par
+    sections.forEach(section => \{\par
+      revealOnScroll.observe(section);\par
+    \});\par
+  </script>\par
+</body>\par
+</html>\par
+}
+ 
